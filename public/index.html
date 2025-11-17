@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Clone - Modern Development Platform</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/css/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/css/favicon.png" />
+  <link rel="shortcut icon" href="/css/favicon.png" />
+  <link rel="apple-touch-icon" href="/css/favicon.png" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="homepage">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <svg height="32" viewBox="0 0 16 16" width="32" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+        <span>GitHub Clone</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#why">Why Us</a>
+        <button class="nav-login-btn" id="loginBtn">
+          <svg height="16" viewBox="0 0 16 16" width="16" fill="currentColor" style="margin-right: 6px;">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+          Sign in with GitHub
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Parallax -->
+  <section class="hero parallax-section" data-speed="0.5">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <div class="hero-text fade-in">
+        <h1 class="hero-title">
+          <span class="gradient-text">Build</span> amazing things together
+        </h1>
+        <p class="hero-subtitle">
+          A modern GitHub experience with enhanced features, beautiful design, and seamless collaboration.
+        </p>
+        <div class="hero-actions">
+          <button class="cta-button primary" id="heroLoginBtn">
+            <svg height="20" viewBox="0 0 16 16" width="20" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+            Sign in with GitHub
+          </button>
+          <a href="https://github.com/signup" target="_blank" class="cta-button secondary">
+            <svg height="20" viewBox="0 0 16 16" width="20" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+            Create GitHub Account
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual slide-in-right">
+        <div class="code-window">
+          <div class="code-header">
+            <div class="code-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="code-title">repository.js</span>
+          </div>
+          <div class="code-content">
+            <pre><code><span class="keyword">const</span> <span class="variable">repository</span> = {
+  <span class="property">name</span>: <span class="string">'amazing-project'</span>,
+  <span class="property">stars</span>: <span class="number">1.2k</span>,
+  <span class="property">collaborators</span>: <span class="number">42</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <h2 class="section-title">Why Choose Our Platform</h2>
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up">
+          <div class="feature-icon">🚀</div>
+          <h3>Lightning Fast</h3>
+          <p>Experience blazing-fast performance with optimized workflows and instant updates.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-delay="100">
+          <div class="feature-icon">🎨</div>
+          <h3>Beautiful Design</h3>
+          <p>Modern, intuitive interface that makes development a joy. Clean and professional.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-delay="200">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure & Private</h3>
+          <p>Your code is protected with enterprise-grade security and privacy controls.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-delay="300">
+          <div class="feature-icon">🤝</div>
+          <h3>Better Collaboration</h3>
+          <p>Enhanced tools for team collaboration with real-time updates and seamless workflows.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-delay="400">
+          <div class="feature-icon">⚡</div>
+          <h3>Advanced Features</h3>
+          <p>Access to cutting-edge features that enhance your development experience.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-delay="500">
+          <div class="feature-icon">🌐</div>
+          <h3>Always Available</h3>
+          <p>99.9% uptime guarantee with global CDN for fast access from anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section parallax-section" data-speed="0.3">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">Built for Developers</h2>
+          <p class="about-description">
+            We've reimagined the GitHub experience with a focus on what matters most: 
+            your productivity, your code, and your team. Every feature is designed 
+            with developers in mind.
+          </p>
+          <div class="stats">
+            <div class="stat-item">
+              <div class="stat-number">10x</div>
+              <div class="stat-label">Faster Workflows</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">GitHub Compatible</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">∞</div>
+              <div class="stat-label">Possibilities</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Section -->
+  <section id="why" class="why-section">
+    <div class="container">
+      <h2 class="section-title">Why It's Better Than GitHub</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-number">01</div>
+          <h3>Enhanced UI/UX</h3>
+          <p>Modern design with smooth animations and transitions that make every interaction delightful.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-number">02</div>
+          <h3>Parallax Experience</h3>
+          <p>Immersive scrolling experience with beautiful parallax effects that bring your content to life.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-number">03</div>
+          <h3>Faster Performance</h3>
+          <p>Optimized for speed with instant load times and responsive interactions.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-number">04</div>
+          <h3>Customizable</h3>
+          <p>Tailor your experience to match your workflow and preferences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 GitHub Clone. Built with ❤️ for developers.</p>
+    </div>
+  </footer>
+
+  <script src="/js/homepage.js"></script>
+</body>
+</html>
